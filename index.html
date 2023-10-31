@@ -849,6 +849,28 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+	
+  
+	
+	const firebaseConfig = {
+	  apiKey: "AIzaSyBL-8bx7lWoW1UCa2d_ex0-AjCfa80evvY",
+	  authDomain: "coffee-shop-7f3ad.firebaseapp.com",
+	  projectId: "coffee-shop-7f3ad",
+	  storageBucket: "coffee-shop-7f3ad.appspot.com",
+	  messagingSenderId: "2519105381",
+	  appId: "1:2519105381:web:224642351a794c3c19ab8c",
+	  measurementId: "G-8FTKVBBT34"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
     
   </body>
 </html>
